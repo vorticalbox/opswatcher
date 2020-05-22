@@ -1,5 +1,5 @@
 # opswatcher
-helper for watching ops log in mongoDB
+helper for watching ops log in mongoDB for changes in a collection
 
 # usage 
 
