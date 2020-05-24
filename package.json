@@ -1,6 +1,6 @@
 {
   "name": "opswatcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "helper for watching ops log in mongoDB",
   "main": "./dist/index.js",
   "dependencies": {
