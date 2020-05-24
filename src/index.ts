@@ -37,6 +37,8 @@ export default class OpsWater {
 
   public watchers: Watchers = {}
 
+  public global: TypedEventEmitter<Events>;
+
   constructor(uri: string, startTime?: Date) {
     this.uri = uri;
     if (startTime) {
@@ -46,6 +48,7 @@ export default class OpsWater {
 
   public async connect(options?: MongoClientOptions) {
     this.conn = await connect(this.uri, { useUnifiedTopology: true, ...options });
+    this.global = new EventEmitter();
     return this.conn;
   }
 
